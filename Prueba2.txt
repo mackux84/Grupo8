@@ -1,3 +1,6 @@
 Este archivo es nuevo para pruebas del funcionamiento de GITHUB
-
-
+Cambio 2
+otro
+efecto 
+repositorio 
+conflicto
