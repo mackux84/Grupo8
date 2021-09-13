@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <title>Equipo #8</title>
+    </head>
+    <body>
+	<br></br>
+	<br>
+	<p><strong>4Guess+</strong></p>
+	</br>
+        <ul>
+            <li>Scrum Master: David Fernando García Hernández </li>
+            <li>Product Owner: Elkin Daniel Cubas Mendoza </li>
+            <li>Scrum Trooper One: Segundo Daniel Diaz Gutierrez </li>
+            <li>Scrum Trooper Two: Julian Rodolfo Rodrígues Martinez </li>
+        </ul>
+    </body>
+</html>
