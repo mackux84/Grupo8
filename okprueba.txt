@@ -10,7 +10,7 @@
         <ul>
             <p>
                <li><b>Scrum Master: </b><spam style="color: red">David Fernando García Hernández </span></li>
-               <li><b>Product Owner: </b><spam style="color: blue">Elkin Daniel Cubas Mendoza </span></li>
+               <li><b><a href="malito:mackuknowledge@outlook.com">Product Owner: </b><spam style="color: blue">Elkin Daniel Cubas Mendoza </span></a></li>
                <li><b>Scrum Trooper One: </b><spam style="color: green">Segundo Daniel Diaz Gutierrez </span></li>
                <li><b>Scrum Trooper Two: </b><spam style="color: yellow">Julian Rodolfo Rodrígues Martinez </span></li>
 	    </p>
