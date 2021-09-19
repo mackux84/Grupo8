@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+     <head>
+         <title>Formulario</title>
+     </head> 
+     <body>
+          <form>
+
+
+
+
+	  </form>
+     <body>
+<html>
