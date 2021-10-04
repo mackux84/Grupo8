@@ -1,0 +1,66 @@
+h1 {
+   color: darkgreen;
+   font-family: Serif;
+   font-weight: 800;
+   border-top: 1em solid black;
+   margin: 30px;
+   }
+h3 {
+   color: darkblue;
+   font-style: italic;
+   font-weight: 900;
+   margin: 30px;
+   } 
+#usuario {
+         color: red;
+         font-weight: 700;
+         margin:30px;
+         }
+#nombre {
+        color: green; 
+        font-weight:600;  
+        }          
+#identidad {
+           color: red;
+           font-weight: 700;
+           margin:30px;
+           }
+#codigo {
+        color: green;
+        font-weight:600; 
+        }                 
+#telefono {
+          color: red;
+          font-weight: 700;
+          margin:30px;
+          } 
+#contacto {
+          color: green; 
+          font-weight:600;  
+          }                     
+li {
+   color: red;
+   font-weight: 700;
+   margin: 40px;
+   }
+
+#botonLimpiar{
+             background-color: rgba(0,130,0,90%); 
+             color:white; 
+             border-radius:8px;
+             margin:30px;
+             }
+#enviar {
+        background-color: gray; 
+        font-style: italic;
+        font-size:150%;
+        font-weight:600;
+        size:5; 
+        border-width:5px; 
+        border-radius:8px;
+        color:navy; 
+        padding: 9px; 
+        position:absolute; 
+        left:40px; 
+        }
+        
