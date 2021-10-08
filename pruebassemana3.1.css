@@ -1,6 +1,6 @@
 h1 {
    color: darkgreen;
-   font-family: Serif;
+   font-family: "Open Sans", sans-serif;
    font-weight: 800;
    border-top: 1em solid black;
    }
@@ -12,16 +12,21 @@ h3 {
    margin: 30px;
    }
 .grid {
+	  text-align: center;
+	  font-family: "Open Sans", sans-serif;
+	  -webkit-font-smoothing: antialiased;
       display: grid;
       grid-template-columns: 50% 50%;
       column-gap: 1em;
       }
 .medidas {
+	     max-width: 600px;
          background: grey;
          border-radius:10px;
          padding: 1.5em;
          } 
 .datos {
+	   max-width: 600px;
        background: grey;
        border-radius:10px;
        padding: 1.5em;
