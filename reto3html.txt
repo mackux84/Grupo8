@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    <link rel="stylesheet" href="reto3.css">
+	  <title>Calculadora IMC Universidad Autónoma de Bucaramanga</title>
+	</head>
+	<body><img src="unab.jpg" width=200px/>
+		<h1>CALCULADORA IMC</h1><br>
+		<form action="formulario.html" methods="get" target="_blank"><br>  
+      <div class="grid">
+        <div class="datos">
+        <h3>Datos personales</h3><br><br>
+        <!-- Ingreso nombreMiembroUnab -->            
+        <label id=usuario> Nombre: </label><br><br>
+				<input type="text" id=nombre name="nombreMiembroUnab" placeholder="Digite un usuario"><br><br><br>
+        <!-- Ingreso codigoMiembroUnab -->
+				<label id=identidad> Código: </label><br><br>
+				<input type="number" id=codigo name="codigoMiembroUnab" placeholder="Digite el número" min="1"><br><br>
+        <!-- checkbox tipoMiembroUnab-->
+        <input type="checkbox" id=Estudiante     name="tipoMiembroUnab" value="Estudiante"     />Estudiante
+        <input type="checkbox" id=Docente        name="tipoMiembroUnab" value="Docente"        />Docente
+        <input type="checkbox" id=Administrativo name="tipoMiembroUnab" value="Administrativo" />Administrativo <br><br>
+        <!-- Ingreso contactoMiembroUnab-->
+				<label id=telefono> Contacto: </label><br><br>
+				<input type="number" id=contacto name="contactoMiembroUnab" placeholder="Digite el número telefónico" min="999999" max="3999999999">
+				</div>            
+        <div class="medidas">       			
+        <h3>Mediciones</h3><br><br>
+				<label id=genero> Sexo: </label><br><br>
+        <!-- Radio button Género -->           
+        <input type="radio" id=hombre name="Género" value="Género1" />Hombre
+        <input type="radio" id=mujer  name="Género" value="Género2" />Mujer<br><br><br>
+        <!-- Ingreso estaturaMiembroUnab -->
+				<label id=itemTalla> Talla: </label><br><br>
+				<input type="number" id=estatura name="estaturaMiembroUnab" placeholder="-m-" min="1.00" max="2.50" step="0.01"><br><br>
+        <!-- Ingreso pesoMiembroUnab -->
+        <label id=itemPeso> Peso: </label><br><br>
+				<input type="number" id=peso name="pesoMiembroUnab" placeholder="-kg-" min="30" max="300" step="1"> 
+				</div>
+				<div class="botones">
+        <!-- Botón para iniciar formulario en blanco -->
+        <input type="reset" id=botonLimpiar value="Limpiar" /><br><br>
+        <!-- Botón para ingresar datos al sistema -->
+				<button type="button" id=enviar >Enviar Formulario</button>
+        </div>
+      </div>
+		</form>
+	</body>
+</html>
