@@ -1,0 +1,127 @@
+body {
+  background-color: teal;
+}
+h1 {
+  text-align: center;
+  color: darkgreen;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 800;
+  border-top: 1em solid black;
+}
+h3 {
+  text-align: center;
+  color: darkblue;
+  font-style: italic;
+  font-weight: 900;
+  margin: 30px;
+}
+.grid {
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  column-gap: 1em;
+  padding: 13px;
+}
+.medidas {
+  max-width: 800px;
+  background: darkorange;
+  border-radius: 10px;
+  padding: 1.5em;
+}
+.datos {
+  max-width: 800px;
+  background: darkorange;
+  border-radius: 10px;
+  padding: 1.5em;
+}
+#usuario {
+  color: red;
+  font-weight: 700;
+  margin: 20px;
+}
+#nombre {
+  color: green;
+  font-weight: 600;
+}
+#identidad {
+  color: red;
+  font-weight: 700;
+  margin: 20px;
+}
+#codigo {
+  color: green;
+  font-weight: 600;
+}
+#telefono {
+  color: red;
+  font-weight: 700;
+  margin: 20px;
+}
+#contacto {
+  color: green;
+  font-weight: 600;
+}
+#genero {
+  color: red;
+  font-weight: 700;
+  margin: 20px;
+}
+#itemTalla {
+  color: red;
+  font-weight: 700;
+  margin: 20px;
+}
+
+#estatura {
+  color: green;
+  text-align: center;
+  font-weight: 600;
+}
+
+#itemPeso {
+  color: red;
+  font-weight: 700;
+  margin: 20px;
+}
+#peso {
+  color: green;
+  text-align: center;
+  font-weight: 600;
+}
+#botonLimpiar {
+  background-color: rgba(0, 130, 0, 90%);
+  color: white;
+  border-radius: 8px;
+  margin: 30px;
+}
+#enviar {
+  background-color: white;
+  font-style: italic;
+  font-size: 150%;
+  font-weight: 600;
+  size: 5;
+  border-width: 5px;
+  border-radius: 8px;
+  color: navy;
+  padding: 9px;
+  left: 40px;
+}
+.botones {
+  grid-column: auto;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  text-align: center;
+}
+@media screen and (max-width: 576px) {
+                                      .grid {
+                                            width: 100%;
+                                             /* The width is 100%, when the viewport is 800px or smaller */
+                                            grid-template-columns: 100%;
+                                            }                                       
+                                      .datos {
+                                             margin-bottom: 20px;
+                                             }
+                                      }
