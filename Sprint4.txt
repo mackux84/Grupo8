@@ -1,0 +1,98 @@
+<html>
+	<head>
+    <link rel="stylesheet" href="reto31.css">
+	  <title>Calculadora IMC Universidad Autónoma de Bucaramanga</title>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(graficarUsuarioTorta);   
+      google.charts.setOnLoadCallback(graficarGeneroBarras); 
+      function producirData() { 
+        let dataUsuarios = new google.visualization.DataTable();
+        dataUsuarios.addColumn('string', 'IMC');
+        dataUsuarios.addColumn('number', 'Cantidad');
+        dataUsuarios.addRows([
+          ['Bajo', 20],
+          ['Normal', 130],
+          ['Sobrepeso', 40],
+          ['Obeso', 10]           
+        ]);   
+        return dataUsuarios;
+      }
+      function graficarUsuarioTorta() { 
+        let data = producirData();
+        let opciones = {title:'IMC en la comunidad universitaria',
+                        width:400,
+                        height:300};
+        let pastel = new google.visualization.PieChart(document.getElementById('pastel_div'));
+            pastel.draw(data, opciones);  
+      }
+      function producirDataBarras() { 
+        let dataGenero = new google.visualization.DataTable();
+        dataGenero.addColumn('string', 'IMC');
+        dataGenero.addColumn('number', 'Cantidad');
+        dataGenero.addRows([
+          ['Bajo', 8],
+          ['Normal', 59],
+          ['Sobrepeso', 26],
+          ['Obeso', 7]           
+        ]);   
+        return dataGenero;
+      }
+      function graficarGeneroBarras() { 
+        let dataBarras = producirDataBarras();
+        let opcionesBarras = {title:'IMC genero masculino',
+                        width:400,
+                        height:300};
+        let barras = new google.visualization.BarChart(document.getElementById('barras_div'));
+            barras.draw(dataBarras, opcionesBarras);  
+      }
+    </script>
+	</head>
+	<body><img src="unab.jpg" width=200px/>
+	<h1>CALCULADORA IMC</h1><br>
+	   <form action="formulario.html" methods="get" target="_blank"><br>  
+         <div class="grid">
+            <div class="datos">
+              <h3>Datos personales</h3><br><br>
+              <!-- Ingreso nombreMiembroUnab -->            
+              <label id=usuario> Nombre: </label><br><br>
+			  <input type="text" id=nombre name="nombreMiembroUnab" placeholder="Digite un usuario"><br><br><br>
+              <!-- Ingreso codigoMiembroUnab -->
+			  <label id=identidad> Código: </label><br><br>
+			  <input type="number" id=codigo name="codigoMiembroUnab" placeholder="Digite el número" min="1"><br><br>
+              <!-- checkbox tipoMiembroUnab-->
+              <input type="checkbox" id=Estudiante     name="tipoMiembroUnab" value="Estudiante"     />Estudiante
+              <input type="checkbox" id=Docente        name="tipoMiembroUnab" value="Docente"        />Docente
+              <input type="checkbox" id=Administrativo name="tipoMiembroUnab" value="Administrativo" />Administrativo <br><br>
+              <!-- Ingreso contactoMiembroUnab-->
+			  <label id=telefono> Contacto: </label><br><br>
+			  <input type="number" id=contacto name="contactoMiembroUnab" placeholder="Digite el número telefónico" min="999999" max="3999999999">
+			</div>            
+            <div class="medidas">       			
+              <h3>Mediciones</h3><br><br>
+			  <label id=genero> Sexo: </label><br><br>
+              <!-- Radio button Género -->           
+              <input type="radio" id=hombre name="Género" value="Género1" />Hombre
+              <input type="radio" id=mujer  name="Género" value="Género2" />Mujer<br><br><br>
+              <!-- Ingreso estaturaMiembroUnab -->
+			  <label id=itemTalla> Talla: </label><br><br>
+			  <input type="number" id=estatura name="estaturaMiembroUnab" placeholder="-m-" min="1.00" max="2.50" step="0.01"><br><br>
+              <!-- Ingreso pesoMiembroUnab -->
+              <label id=itemPeso> Peso: </label><br><br>
+			  <input type="number" id=peso name="pesoMiembroUnab" placeholder="-kg-" min="30" max="300" step="1"> 
+			</div>
+         </div>
+	  	 <div class="botones">
+          <!-- Botón para iniciar formulario en blanco -->
+          <input type="reset" id=botonLimpiar value="Limpiar" /><br><br>
+          <!-- Botón para ingresar datos al sistema -->
+		  <button type="button" id=enviar >Enviar Formulario</button>
+         </div>         
+          <div id="pastel_div"></div>
+          <div id="barras_div"></div>
+          </tr>
+        </table>
+	    </form>
+	</body>
+</html>
